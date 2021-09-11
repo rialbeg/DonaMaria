@@ -201,6 +201,18 @@ section.escolas{
 
 
 /*-------DEPOIMENTOS--------*/
+
+.depoimentos-title{
+    text-align: center;
+    color: var(--main-orange);
+}
+
+.thin-line{
+    color: var(--main-orange);
+    margin: 10px auto;
+    border: 3px solid;
+    width:10%;
+}
 .depoimentos{
     display: flex;
     justify-content: space-around;
