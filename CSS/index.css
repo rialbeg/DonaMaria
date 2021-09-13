@@ -82,6 +82,7 @@ main{
 .home-text-container .home-line{
     border: 3px solid;
     width:30%;
+    
 }
 
 .home-text-container .home-button{
@@ -100,7 +101,24 @@ main{
    max-width: 100%;
 }
 
+/*-------VANTAGEMS--------*/
+.vantagens{
+    
+}
 
+.parallax {
+    /* The image used */
+    background-image: url("../images/ecomm.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /*-------SOBRE--------*/
 .sobre{
     display: flex;
@@ -134,71 +152,65 @@ section.escolas{
     background-color: var(--main-orange);
     text-align:center;
     color:white;
+    padding-bottom: 20px;
 }
 
 .escolas-title{
     padding-top:30px;
 }
+
+.escolas-names{
+    font-size:2.5rem;
+    margin-bottom: 20px;
+}
+
 .line{
     margin: 10px auto;
     border: 3px solid;
     width:30%;
 }
-#items-wrapper {
-    width: 80vw;
-    margin: 20px auto;
-    padding: 20px;
-  }
-  
-  #items {
-    display: flex;
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    --webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-  }
-  
-  .item {
-    flex: none;
-    
-    width: 100%;
-    height: 400px;
-    
-    scroll-snap-align: start;
-    pointer-events: none;
 
+.frame{
+    margin:20px auto;
+    max-width:800px;
+    width: 100%;
+}
+.container {
     position: relative;
-    text-align: center;
-  }
-
-  .item h2{
-    z-index: 2;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100vw;
-    margin-top: 100px;
-    font-size: 3rem;
-}
-
-.item img {
     width: 100%;
-    height: 100%;
-    
-    object-fit: cover;
 }
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     height: 100%;
-    background: rgba(0, 0, 0, .6);
-    color: #FFF;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000;
+}
+  
+.container:hover .overlay {
+    opacity: 0.8;
 }
 
+.top{
+    margin-top:50px;
+}
+.text {
+    color: white;
+    font-size: 2rem;
+    padding-top:10px;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    text-align: center;
+}
 
 /*-------DEPOIMENTOS--------*/
 
