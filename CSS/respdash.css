@@ -24,6 +24,47 @@ body {
     
 }
 
+/*-------MAIN--------*/
+
+.home-text-container .home-title {
+position: absolute;
+width: 199px;
+height: 43px;
+left: 110px;
+
+font-family: Expletus Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 48px;
+
+color: #FFFFFF;
+}
+
+.home-text-container .home-title,
+.home-text-container .home-line,
+.home-text-container .home-button,
+.home-text-container .home-subtitle{
+    margin-bottom: 10px;
+}
+
+.home-text-container .home-subtitle{
+
+position: absolute;
+width: 730px;
+height: 75px;
+left: 110px;
+top: 170px;
+
+font-family: Expletus Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 58px;
+line-height: 78px;
+
+color: #FFFFFF;
+
+}
 
 /*-------NAVBAR--------*/
 nav#navbar{
@@ -67,6 +108,7 @@ main{
     background-color: var(--main-orange);
     padding:50px 30px;
     color: white;
+    height: 222.93px;
 }
 
 .home-text-container .home-title,
@@ -126,34 +168,6 @@ main{
 }
 
 .sobre .sobre-item h3{
-    color:var(--main-medium-blue);
-}
-
-/*-------Vantagens--------*/
-.vantagens{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.fas{
-    font-size: 6rem;
-    margin-bottom: 20px;
-    color:var(--main-orange);
-}
-.vantagens .vantagens-item{
-    margin:40px 20px;
-    text-align: center;
-    width:200px;
-    height: 200px;
-    padding:20px;
-
-    border-radius: 3rem;
-    box-shadow: 0 0 20px 10px #d9d9d9;
-   
-}
-
-.vantagens .vantagens-item h3{
     color:var(--main-medium-blue);
 }
 
@@ -233,6 +247,8 @@ section.escolas{
 .depoimentos-title{
     text-align: center;
     color: var(--main-orange);
+    padding-top: 38px;
+
 }
 
 .thin-line{
