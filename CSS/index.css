@@ -38,6 +38,23 @@ nav#navbar{
     position: fixed;
     width: 100%;
     z-index: 5;
+
+    
+}
+
+nav#navbar.active{
+    background-color: var(--main-medium-blue);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size:2.0rem;
+    color: white;
+
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    transition: all 0.5s;
 }
 
 nav img#logo-nome{
@@ -101,24 +118,7 @@ main{
    max-width: 100%;
 }
 
-/*-------VANTAGEMS--------*/
-.vantagens{
-    
-}
 
-.parallax {
-    /* The image used */
-    background-image: url("../images/ecomm.jpg");
-  
-    /* Set a specific height */
-    min-height: 500px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 /*-------SOBRE--------*/
 .sobre{
     display: flex;
@@ -150,11 +150,39 @@ main{
 /*-------Vantagens--------*/
 .vantagens{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    color: var(--main-medium-blue);
+    flex-direction: column;
 }
 
-.fas{
+.vantagens-title{
+    font-size:4.5rem;
+}
+
+.vantagens-frase{
+    font-size:2.5rem;
+}
+
+.vantagens-frase, .vantagens-title{
+    padding: 15px 10px;
+    font-weight: bold;
+}
+.parallax {
+    /* The image used */
+    background-image: url("../images/ecomm.png");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* .fas{
     font-size: 6rem;
     margin-bottom: 20px;
     color:var(--main-orange);
@@ -173,7 +201,7 @@ main{
 
 .vantagens .vantagens-item h3{
     color:var(--main-medium-blue);
-}
+} */
 
 /*-------ESCOLAS--------*/
 section.escolas{
@@ -245,6 +273,8 @@ section.escolas{
 .depoimentos-title{
     text-align: center;
     color: var(--main-orange);
+    margin-top: 30px;
+    font-size:2.8rem;
 }
 
 .thin-line{
@@ -283,4 +313,10 @@ section.escolas{
     height:100px;
     border-radius:50%;
     object-fit: cover;
+}
+
+/*-------FOOTER--------*/
+#footer{
+    background:var(--main-orange);
+    height:40px;
 }
