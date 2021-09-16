@@ -19,12 +19,17 @@
 <body>
     <header id="header">
         <nav id="navbar">
-            <img src="./images/logo-nome.png" alt="Dona Maria Cantina Escolar" id="logo-nome">
-            <ul class="navlist">
-                    <li class="navitem"><a href="./respdashboard.html">.</a>Home</li>
-                    <li class="navitem">Sobre Nós</li>
-            </ul>
-            <div class="btn-login">Login</div>
+            <a href="./index.html">
+                <img src="./images/logo-nome.png" alt="Dona Maria Cantina Escolar" id="logo-nome">
+            </a>
+                <ul class="navlist">
+                    <li class="navitem"><a href="#home">Home</a></li>
+                    <li class="navitem"><a href="#sobre"></a></li>
+                    <li class="navitem"><a href="#vantagens">Sobre Nós</a></li>
+                    <li class="navitem"><a href="#escolas">Escolas</a></li>
+                    <li class="navitem"><a href="#depoimentos">Depoimentos</a></li>
+                </ul>
+            <div class="button btn-login">Login</div>
         </nav>
     </header>
 
@@ -41,7 +46,7 @@
                 <img src="./images/school-main.png" alt="home-img" class="home-img">
             </div>
         </section>
-        <section class="sobre">
+        <section id="sobre" class="sobre">
             <div class="sobre-item card">
                 <i class="fas fa-school"></i>
                 <h3>Verifique se sua escola está cadastrada.</h3>
@@ -55,27 +60,27 @@
                 <h3>Visualize, edite e adicione créditos para seu filho(a).</h3>
             </div>
         </section>
-        <section class="vantagens parallax ">
-            <h2 class="vantagens-title">Vantagens</h2>
-            <div class="thin-line"></div>
-            <p class="vantagens-frase">
-                &#34O responsável coloca crédito na conta do aluno e escolhe o que pode ou nao ser comprado!&#34
-            </p>
-            <p class="vantagens-frase">
-                &#34O aluno seleciona o que deseja comer e realiza a compra sem precisar de qualquer meio de 
-                pagamento.&#34
-            </p>
-            <p class="vantagens-frase">
-                &#34Alunos compram seus lanches de forma segura.&#34
-            </p>
-            <p class="vantagens-frase">
-                &#34Responsáveis controlam quanto e que comidas e bebidas seus filhos podem consumir.&#34
-            </p>
-            <p class="vantagens-frase">
-                &#34Tenha um histórico de tudo que seus filhos compraram.&#34
-            </p>
+        <section id="vantagens" class="vantagens parallax ">
+                <h2 class="vantagens-title">Vantagens</h2>
+                <div class="thin-line"></div>
+                <p class="vantagens-frase">
+                    &#34O responsável coloca crédito na conta do aluno e escolhe o que pode ou nao ser comprado!&#34
+                </p>
+                <p class="vantagens-frase">
+                    &#34O aluno seleciona o que deseja comer e realiza a compra sem precisar de qualquer meio de 
+                    pagamento.&#34
+                </p>
+                <p class="vantagens-frase">
+                    &#34Alunos compram seus lanches de forma segura.&#34
+                </p>
+                <p class="vantagens-frase">
+                    &#34Responsáveis controlam quanto e que comidas e bebidas seus filhos podem consumir.&#34
+                </p>
+                <p class="vantagens-frase">
+                    &#34Tenha um histórico de tudo que seus filhos compraram.&#34
+                </p>
         </section>
-        <section class="escolas">
+        <section id="escolas" class="escolas">
             <h2 class="escolas-title">
                 Escolas que já fazem parte!
             </h2>
@@ -143,12 +148,13 @@
                 </button>
               </div>
         </section>
+        
+            <h2 class="depoimentos-title">
+                O que estão falando da gente.
+            </h2>
+            <hr class="thin-line">
 
-        <h2 class="depoimentos-title">
-            O que estão falando da gente.
-        </h2>
-        <hr class="thin-line">
-        <section class="depoimentos">
+        <section id="depoimentos" class="depoimentos">
             <div class="depoimento">
                 <h3>Um jeito prático e eficiente de comprar. Parece até mágica</h3>
                 <img src="./images/dumbledore.jpg" alt="Alvo Dumbledore">
@@ -164,7 +170,7 @@
                 <img src="./images/dumbledore.jpg" alt="Alvo Dumbledore">
                 <h2>Alvo Dumbledore</h2>
             </div>
-
+           
         </section>
     </main>
     <footer id="footer"></footer>

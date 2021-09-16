@@ -15,6 +15,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: auto;
 }
 
 body {
@@ -25,6 +26,54 @@ body {
 }
 
 
+/*-------LINKS--------*/
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+a{
+    color:white !important;
+}
+
+a.link-active{
+    text-decoration:underline;
+}
+
+/*-------BUTTONS--------*/
+.button {
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.8rem;
+    margin: 4px 15px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-login{
+    color:var(--main-orange);
+    background-color:white;
+    border-radius:30px;
+}
+.btn-login:hover{
+    border:2px solid white;
+    background-color:rgba(0,0,0,0);
+    color:white;
+}
 /*-------NAVBAR--------*/
 nav#navbar{
     background-color: var(--main-orange);
@@ -38,23 +87,23 @@ nav#navbar{
     position: fixed;
     width: 100%;
     z-index: 5;
-
+    transition: all 0.2s;
     
 }
 
-nav#navbar.active{
+nav#navbar.nav-active{
     background-color: var(--main-medium-blue);
     display:flex;
     justify-content: space-between;
     align-items: center;
 
-    font-size:2.0rem;
+    font-size:1.8rem;
     color: white;
 
     position: fixed;
     width: 100%;
     z-index: 5;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 
 nav img#logo-nome{
@@ -68,9 +117,7 @@ nav img#logo-nome{
     padding-right: 30px;
 }
 
-nav div.btn-login{
-    padding-right:20px;
-}
+
 
 /*-------MAIN--------*/
 main{
@@ -156,11 +203,16 @@ main{
 }
 
 .vantagens-title{
+    margin-top:80px;
     font-size:4.5rem;
 }
 
 .vantagens-frase{
     font-size:2.5rem;
+}
+
+.vantagens-frase:last-child{
+    margin-bottom:80px;
 }
 
 .vantagens-frase, .vantagens-title{
@@ -212,8 +264,10 @@ section.escolas{
 }
 
 .escolas-title{
-    padding-top:30px;
+    padding-top:90px;
+    font-size:4.2rem;
 }
+
 
 .escolas-names{
     font-size:2.5rem;
@@ -273,9 +327,10 @@ section.escolas{
 .depoimentos-title{
     text-align: center;
     color: var(--main-orange);
-    margin-top: 30px;
-    font-size:2.8rem;
+    margin-top: 100px;
+    font-size:4.2rem;
 }
+
 
 .thin-line{
     color: var(--main-orange);
@@ -294,7 +349,7 @@ section.escolas{
 
 
 .depoimento{
-    margin:40px 20px;
+    margin:80px 20px;
     text-align: center;
     width:400px;
     height: 300px;
