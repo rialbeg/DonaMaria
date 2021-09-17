@@ -15,7 +15,6 @@
 
 html {
     font-size: 62.5%;
-    scroll-behavior: auto;
 }
 
 body {
@@ -342,6 +341,7 @@ section.escolas{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     /* text-align: center; */
     /* background-color:var(--main-orange); */
     /* margin-top:-20px; */
