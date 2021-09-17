@@ -1,0 +1,65 @@
+/*-------GLOBAL--------*/
+
+
+:root {
+    --main-background-color:#F6F6F6;
+    --main-orange:#ED7D2B;
+    --main-medium-blue:#2B478B;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:var(--main-background-color) !important;
+    /* position: relative; */
+    
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*---------NAVBAR---------*/
+
+#navbar{
+    background-color:var(--main-orange);
+}
+#navbar img{
+    width:30rem;
+    max-width: 100%;
+    padding: 10px 20px;
+}
+
+/*---------FORM---------*/
+.infoaluno1,.infoaluno2{
+    width:400px;
+    
+    background-color:white;
+
+    padding: 20px;
+    font-size:1.8rem;
+}
+
+input[type=text],input[type=email],input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
