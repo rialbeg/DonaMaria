@@ -22,40 +22,46 @@
         </a>
     </nav>
 
-    <div class="container">
-        <div class="infoaluno1">
-            <form action="/action_page.php">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome">
+    <!-- <div class="container"> -->
+        <form action="cadastrar_aluno.html" class="container">
+            <div class="infoaluno1">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome">
 
-                <label for="turma">Turma</label>
-                <input type="text" id="turma" name="turma">
+                    <label for="turma">Turma</label>
+                    <input type="text" id="turma" name="turma">
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-            
-                <label for="login">Login</label>
-                <input type="text" id="login" name="login">
-            
-            </form>
-        </div>
-        <div class="infoaluno2">
-            <form action="/action_page.php">
-                <label for="matricula">Matrícula</label>
-                <input type="text" id="matricula" name="matricula">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                
+                    <label for="login">Login</label>
+                    <input type="text" id="login" name="login">
 
-                <label for="turno">Turno</label>
-                <input type="text" id="turno" name="turno">
+                    <input class="hidden" type="submit" value="Cadastrar">
+                    
+            </div>
+            <div class="infoaluno2">
 
-                <label for="telefone">Telefone</label>
-                <input type="text" id="telefone" name="telefone">
+                    <label for="matricula">Matrícula</label>
+                    <input type="text" id="matricula" name="matricula">
+
+                    <label for="turno">Turno</label>
+                    <input type="text" id="turno" name="turno">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" name="telefone">
+                
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha">
+                
+                    <div class="buttons">
+                        <a href="../index.html" class="btn-cancelar">Cancelar</a>
+                        <input class="medium-blue" type="submit" value="Cadastrar">
+                    </div>
+            </div>
+        </form>
             
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha">
-            
-            </form>
-        </div>
-    </div>
+    <!-- </div> -->
 
 
 
