@@ -126,3 +126,13 @@ input[type=submit]:hover {
 .medium-blue{
     background-color: var(--main-medium-blue);
 }
+
+/*---------MEDIA QUERIES---------*/
+
+@media  (max-width: 991px) {
+    .hidden{
+        display:none;
+    }
+}
+  
+  
