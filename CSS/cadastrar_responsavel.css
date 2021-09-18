@@ -75,14 +75,14 @@ a{
 
 
 /*---------TITULO---------*/
-.cda-title{
+.cdr-title{
     text-align:center;
     opacity: 0.9;
     padding-top: 10px;
 }
 
 /*---------FORM---------*/
-.infoaluno1,.infoaluno2{
+.inforesponsavel1,.inforesponsavel2{
     width:400px;
     
     background-color:white;

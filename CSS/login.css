@@ -55,6 +55,7 @@ input[type=text]{
     border: 1px solid #ccc;
     border-radius: 50px;
     box-sizing: border-box;
+    outline: none;
 }
 
 input[type=submit] {
@@ -72,6 +73,9 @@ input[type=submit]:hover {
     opacity: 0.9;
 }
 
+input[type=text]:focus{
+    box-shadow: 0 0 3pt 2pt var(--main-medium-blue);
+}
 
 /*---------LINKS---------*/
 .login-link{
