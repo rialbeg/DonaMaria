@@ -18,6 +18,7 @@
   //   console.log('moveu')
   // }, 1500);
 
+/*Navbar changing color*/
 const navbar = document.querySelector("#navbar");
 const navimage = document.querySelector("#logo-nome");
 
@@ -71,3 +72,7 @@ function changeLinkState() {
 
 changeLinkState();
 window.addEventListener('scroll', changeLinkState);
+
+
+
+
