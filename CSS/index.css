@@ -108,6 +108,7 @@ nav#navbar.nav-active{
 nav img#logo-nome{
     width:30rem;
     max-width: 100%;
+    min-width: 285px;
     padding: 10px 20px;
 }
 
@@ -170,6 +171,7 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .fas{
@@ -374,4 +376,61 @@ section.escolas{
 #footer{
     background:var(--main-orange);
     height:40px;
+}
+
+
+/*-------MEDIA QUERIES--------*/
+@media (max-width:940px) {
+    /* html{
+        font-size:55%;
+    } */
+    .navlist,.btn-login{
+        display: none;
+        
+    }
+
+    .one,
+    .two,
+    .three{
+        background-color: #fff;
+        height:5px;
+        width:100%;
+        margin:6px auto;
+    }
+
+    .menu-toggle{
+        width:40px;
+        margin-left: 50%;
+    }
+
+    /*fullscreen*/
+    nav img#logo-nome{
+        visibility:hidden;
+    }
+    nav#navbar{
+        background-color: var(--main-medium-blue);
+    }
+    .on{
+        position:absolute;
+        top:0;
+        left:0;
+
+        width:100vw;
+        height:100vh;
+
+        background-color: var(--main-medium-blue);
+
+        z-index: 10;
+        
+    }
+
+}
+
+@media (max-width:850px) {
+    #home{
+        display: block;
+    }
+    .menu-toggle{
+        margin-left:40%;
+    }
 }
