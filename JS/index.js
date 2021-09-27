@@ -74,5 +74,21 @@ changeLinkState();
 window.addEventListener('scroll', changeLinkState);
 
 
+/*Toggle menu hamburguer*/   
+let show = true; 
+
+const menuSection = document.querySelector(".menu-section")
+const menuToggle = menuSection.querySelector(".menu-toggle")
+const login_link = document.querySelector(".btn-login");
+const navlist = document.querySelector(".navlist");
+// const navbar = document.querySelector("#navbar"); see line 22
+menuToggle.addEventListener("click", () => {
+
+    document.body.style.overflow = show ? "hidden" : "initial"
+
+
+    menuSection.classList.toggle("on", show)
+    show = !show;
+})
 
 
