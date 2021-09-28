@@ -82,6 +82,7 @@
                   </form>
                   <div>
                     <a href="./cadastrar_produto.html" class="options">+ Novo Produto</a>
+                    <a href="#desbloquear-modal" class="options">+Desbloquear</a>
                   </div>
                 </div>
                 <table id="customers">
@@ -93,6 +94,7 @@
                     <th>Fornecedor</th>
                     <th>Foto</th>
                     <th>Preço</th>
+                    <th>Bloqueado</th>
                     <th>Editar</th>
                     <th>Excluir</th>
                 </tr>
@@ -105,6 +107,9 @@
                     <td>x</td>
                     <td>Foto</td>
                     <td>R$ 5,00</td>
+                    <td>
+                      Sim 
+                    </td>
                     <td>
                       <a href="./cadastrar_produto.html">
                         <i class="fas fa-pencil-alt"></i>
@@ -133,7 +138,7 @@
                   <input type="submit" value="Pesquisar">
                 </form>
                 <div>
-                  <a href="./cadastrar_aluno.html" class="options">+ Novo Aluno</a>
+                  <!-- <a href="./cadastrar_aluno.html" class="options">+ Novo Aluno</a> -->
                   <a href="#" class="options">+ Extrato</a>
                 </div>
               </div>
@@ -234,6 +239,27 @@
             <a href="#" class="close">X</a>
           </div>
         </div>
+
+        <!-- ----------  Modal desbloquear/bloquear produto ---------- -->
+        <div id="desbloquear-modal" class="overlay">
+          <a href="#" class="cancel"></a>
+          <div class="modal">
+            <form >
+              <label for="matricula">Matricula</label>
+              <input type="text" id="matricula" name="matricula" placeholder="Digite aqui ...">
+          
+              <label for="desbloqueio">Opções</label>
+              <select id="desbloqueio" name="desbloqueio" onchange="changeOption()">
+                <option value="desbloquear">Desbloquear</option>
+                <option value="bloquear">Bloquear</option>
+              </select>
+            
+              <input  type="submit" value="Desbloquear">
+            </form>
+            <a href="#" class="close">X</a>
+          </div>
+        </div>
+
       </section>
     </main>
 
@@ -243,7 +269,7 @@
       src="https://kit.fontawesome.com/ffb9df773d.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./JS/index.js"></script>
+    <!-- <script src="./JS/index.js"></script> -->
     <script src="../JS/adminDashboard.js"></script>
   </body>
 </html>

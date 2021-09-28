@@ -1,3 +1,4 @@
+/*****************Tab function*****************/
 function openTab(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -14,3 +15,15 @@ function openTab(evt, cityName) {
   
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
+
+  /*****************Change option desbloquear modal*****************/
+  const desbloqueio = document.getElementById("desbloqueio");
+  const submit = document.querySelector(".modal input[type=submit]");
+
+  function changeOption(){
+    let valor = desbloqueio.value;
+    if(valor == 'bloquear')
+      submit.value  = 'Bloquear';
+    if(valor == 'desbloquear')
+      submit.value = 'Desbloquear';  
+  }

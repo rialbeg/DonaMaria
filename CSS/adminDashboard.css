@@ -52,6 +52,33 @@
   nav div.btn-login {
     padding-right: 20px;
   }
+
+  /*-------LINKS--------*/
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+a:active {
+  text-decoration: none;
+  color:  var(--main-orange);
+}
+
+a{
+  color: var(--main-orange) !important;
+}
+
+a.link-active{
+  text-decoration:underline;
+}
   
   /* ------------------------- MAIN -------------------------*/
   
@@ -296,7 +323,7 @@
 .button {
   background-color: #4CAF50; /* Green */
   border: none;
-  color: white;
+  color: white !important;
   padding: 10px 22px;
   text-align: center;
   text-decoration: none;
@@ -308,10 +335,37 @@
   transition-duration: 0.4s;
 }
 
+.button:active,.button:hover{
+  color: white !important;
+}
 
 .button-red {background-color: #f44336;} /* Red */
 .button-blue {background-color: var(--main-medium-blue);width:110px} /* Red */
 
+.modal input[type=text], .modal select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal input[type=submit]:hover {
+  background-color: #45a049;
+}
 
 /* ------------------------------ MEDIA QUERIES ------------------------- */
 @media (max-width:768px){
@@ -323,7 +377,7 @@
 
   }
 
-@media (max-width: 425px){
+@media (max-width:650px){
   .tab{
     flex-direction: column;
   }
