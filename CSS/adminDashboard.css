@@ -32,7 +32,7 @@
     font-size: 2rem;
     color: white;
   
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 5;
     padding: 0% 15%;
@@ -56,12 +56,12 @@
   /* ------------------------- MAIN -------------------------*/
   
   main {
-    padding-top: 9rem;
+    /* padding-top: 9rem; */
     /* margin: 0 15rem; */
     flex-wrap: wrap;
   }
   
-  .home-text-container .home-title {
+  /* .home-text-container .home-title {
     position: absolute;
     width: auto;
     height: 43px;
@@ -74,9 +74,9 @@
     line-height: 48px;
   
     color: #ffffff;
-  }
+  } */
   
-  .home-text-container .home-subtitle {
+  /* .home-text-container .home-subtitle {
     position: absolute;
     width: 730px;
     height: 75px;
@@ -90,7 +90,7 @@
     line-height: 78px;
   
     color: #ffffff;
-  }
+  } */
   
   /* ------------------------- HEADER ------------------------- */
   #header {
@@ -100,9 +100,10 @@
     background-color: var(--main-orange);
     color: white;
     height: 222.93px;
+    padding:10px 15%;
   }
   
-  .header-text {
+  /* .header-text {
     margin-left: 30rem;
   }
   .header-text .header-welcome {
@@ -129,7 +130,7 @@
   .header-text .header-line {
     border: 3px solid;
     width: 30%;
-  }
+  } */
   
   /* ------------------------- PRODUCTS HEADER ------------------------- */
   
@@ -166,11 +167,11 @@
   
   .tab button {
     background-color: inherit;
-    float: center;
+    /* float: center; */
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 10px 150px;
+    padding: 10px 10px;
     transition: 0.3s;
     color: #ed7d2b;
   }
@@ -178,7 +179,7 @@
   .tablinks {
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 2rem;
     line-height: 40px;
   
     color: #ed7d2b;
@@ -191,61 +192,34 @@
     border-top: none;
   }
   
-  /* ------------------------------ TABS: Comidas/Bebidas ------------------------- */
+ 
   
-  .titleTab {
-    text-align: start;
-    padding-top: 3rem;
-    padding-left: 5%;
-    font-size: 50px;
-    color: var(--main-orange);
-  }
-  
-  .produtos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .produto {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 2rem;
-    text-align: center;
-    width: 50rem;
-    height: 15rem;
-    padding: 0px;
-    border-radius: 3rem;
-    box-shadow: 0 0 20px 10px #d9d9d9;
-  }
-  
-  .produto img {
-    padding: 1rem;
-  }
-  
-  .produto img {
-    width: 12rem;
-    height: 12rem;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .produto-text {
-    display: flex;
-    align-items: flex-start;
-    justify-content: start;
-    flex-direction: column;
-  }
-  
-  .produto-text h1,
-  h2,
-  h5 {
-    margin: 0.2rem 0.2rem;
-  }
-  
-/* ------------------------------ TABS: PRODUTOS ------------------------- */
+/* ------------------------------ TABLES ------------------------- */
+.table-title{
+  /* text-align: center; */
+  color: var(--main-medium-blue);
+  font-size: 3rem;
+  /* margin-bottom: 10px; */
+}
+.options{
+  font-size:1.8rem;
+}
+#fname,.search-form input[type="submit"]{
+  padding: 8px 20px;
+}
+.search-form input[type="text"]{
+  width:300px;
+}
+
+.table-search{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.table-search > *,.search-form > *,.table-search div > *{
+  margin: 5px;
+}
 .table-container{
     overflow-x: auto;
     min-width:400px;
@@ -254,10 +228,9 @@
 }
 
 #customers {
-    font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
-  }
+}
   
   #customers td, #customers th {
     border: 1px solid #ddd;
@@ -272,6 +245,97 @@
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #04AA6D;
+    background-color: var(--main-orange);
     color: white;
   }
+
+/* ------------------------------ MODAL ------------------------- */
+.overlay {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .7);
+  z-index: 10;
+}
+
+.overlay:target {
+  visibility: visible;
+}
+
+.modal {
+  position: relative;
+  width: 300px;
+  max-width: 80%;
+  background: white;
+  border-radius: 8px;
+  padding: 1em 2em;
+  text-align: center;
+}
+
+.modal .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: grey;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.overlay .cancel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width:100px;
+  transition-duration: 0.4s;
+}
+
+
+.button-red {background-color: #f44336;} /* Red */
+.button-blue {background-color: var(--main-medium-blue);width:110px} /* Red */
+
+
+/* ------------------------------ MEDIA QUERIES ------------------------- */
+@media (max-width:768px){
+  #header{
+
+    /* display:block;*/
+    text-align:center;
+    flex-direction: column;
+
+  }
+
+@media (max-width: 425px){
+  .tab{
+    flex-direction: column;
+  }
+}
+
+  /* .header-text > *{
+    margin-right:250px;
+  }
+  .header-name{
+    margin-bottom: 10px;
+  }
+  .header-creditos > *{
+    margin-left:200px;
+  } */
+}
