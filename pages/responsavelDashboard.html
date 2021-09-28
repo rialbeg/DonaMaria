@@ -50,6 +50,7 @@
         <div id="Alunos">
           <h2 class="titleTab">Alunos</h2>
           <hr class="thin-line" />
+          <a href="./cadastrar_aluno.html" class="options">+ Novo Aluno</a>
           <div class="alunos">
             <div class="aluno">
               <img src="../images/Bart_Simpson.png" alt="Alvo Dumbledore" />
@@ -62,7 +63,11 @@
                 <h5>Turno: Matutino</h5>
                 <h5>Telefone: (11) 4002 8922</h5>
                 <h1>R$ 37,00</h1>
+                <a href="#deposit-modal">
+                  <i class="fas fa-money-bill-wave deposit"></i>
+                </a>
               </div>
+              <a href="#delete-modal" class="close1">X</a>
             </div>
             <div class="aluno">
               <img src="../images/Lisa_Simpson.jpg" alt="Alvo Dumbledore" />
@@ -75,7 +80,11 @@
                 <h5>Turno: Matutino</h5>
                 <h5>Telefone: (11) 4002 8922</h5>
                 <h1>R$ 500,00</h1>
+                <a href="#deposit-modal">
+                  <i class="fas fa-money-bill-wave deposit"></i>
+                </a>
               </div>
+              <a href="#delete-modal" class="close1">X</a>
             </div>
             <div class="aluno">
               <img src="../images/maggie_simpson.png" alt="Alvo Dumbledore" />
@@ -88,11 +97,38 @@
                 <h5>Turno: Matutino</h5>
                 <h5>Telefone: (11) 4002 8922</h5>
                 <h1>R$ R$ 400,00</h1>
+                <a href="#deposit-modal">
+                  <i class="fas fa-money-bill-wave deposit"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- *************Delete modal****************** -->
+      <div id="delete-modal" class="overlay">
+        <a href="#" class="cancel"></a>
+        <div class="modal">
+          <h1>Você tem certeza?</h1>
+          <a href="#" class="button button-red">Voltar</a>
+          <a href="javascript:alert('Registro excluído')" class="button">Excluir</a>
+          <a href="#" class="close">X</a>
+        </div>
+      </div>
+
+      <!-- ----------  Modal desbloquear/bloquear produto ---------- -->
+      <div id="deposit-modal" class="overlay">
+        <a href="#" class="cancel"></a>
+        <div class="modal">
+          <form >
+            <label for="deposito">Valor:</label>
+            <input type="text" id="deposito" name="deposito" placeholder="Digite aqui ...">
+        
+            <input  type="submit" value="Depositar">
+          </form>
+          <a href="#" class="close">X</a>
+        </div>
+      </div>
     </main>
 
     <footer id="footer"></footer>
