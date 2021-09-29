@@ -21,7 +21,39 @@
     background-color: var(--main-background-color);
     font-size: 1.6rem;
   }
-/*-------LINKS--------*/
+  
+  /* ------------------------- NAVBAR ------------------------- */
+  nav#navbar {
+    background-color: var(--main-orange);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    font-size: 2rem;
+    color: white;
+  
+    /* position: fixed; */
+    width: 100%;
+    z-index: 5;
+    padding: 0% 15%;
+  }
+  
+  nav img#logo-nome {
+    width: 30rem;
+    max-width: 100%;
+    padding: 10px 20px;
+  }
+  
+  nav ul.navlist li.navitem {
+    display: inline;
+    padding-right: 30px;
+  }
+  
+  nav div.btn-login {
+    padding-right: 20px;
+  }
+
+  /*-------LINKS--------*/
 a:link {
   text-decoration: none;
 }
@@ -42,53 +74,21 @@ a:active {
 
 a{
   color: var(--main-orange) !important;
-  padding-left: 5%;
 }
 
 a.link-active{
   text-decoration:underline;
 }
   
-/* ------------------------- NAVBAR ------------------------- */
-  nav#navbar {
-    background-color: var(--main-orange);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    font-size: 2rem;
-    color: white;
-  
-    position: fixed;
-    width: 100%;
-    z-index: 5;
-    padding: 0% 15%;
-  }
-  
-  nav img#logo-nome {
-    width: 30rem;
-    max-width: 100%;
-    padding: 10px 20px;
-  }
-  
-  nav ul.navlist li.navitem {
-    display: inline;
-    padding-right: 30px;
-  }
-  
-  nav div.btn-login {
-    padding-right: 20px;
-  }
-  
   /* ------------------------- MAIN -------------------------*/
   
   main {
-    padding-top: 9rem;
+    /* padding-top: 9rem; */
     /* margin: 0 15rem; */
     flex-wrap: wrap;
   }
   
-  .home-text-container .home-title {
+  /* .home-text-container .home-title {
     position: absolute;
     width: auto;
     height: 43px;
@@ -101,9 +101,9 @@ a.link-active{
     line-height: 48px;
   
     color: #ffffff;
-  }
+  } */
   
-  .home-text-container .home-subtitle {
+  /* .home-text-container .home-subtitle {
     position: absolute;
     width: 730px;
     height: 75px;
@@ -117,7 +117,7 @@ a.link-active{
     line-height: 78px;
   
     color: #ffffff;
-  }
+  } */
   
   /* ------------------------- HEADER ------------------------- */
   #header {
@@ -127,9 +127,10 @@ a.link-active{
     background-color: var(--main-orange);
     color: white;
     height: 222.93px;
+    padding:10px 15%;
   }
   
-  .header-text {
+  /* .header-text {
     margin-left: 30rem;
   }
   .header-text .header-welcome {
@@ -156,7 +157,7 @@ a.link-active{
   .header-text .header-line {
     border: 3px solid;
     width: 30%;
-  }
+  } */
   
   /* ------------------------- PRODUCTS HEADER ------------------------- */
   
@@ -174,97 +175,107 @@ a.link-active{
     width: 90%;
   }
   
-
-  /* ------------------------------  Alunos ------------------------- */
+  /* ------------------------------ TAB ------------------------- */
   
-  .titleTab {
-    text-align: start;
-    padding-top: 3rem;
-    padding-left: 5%;
-    font-size: 50px;
+  .tabLine {
     color: var(--main-orange);
+    margin: 10px auto;
+    border: 1px solid;
+    width: 200px;
   }
   
-  .alunos {
+  .tab {
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: #f6f6f6;
   }
   
-  .aluno {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 2rem;
-    text-align: center;
-    width: 50rem;
-    height: 15rem;
-    padding: 0px;
-    border-radius: 3rem;
-    box-shadow: 0 0 20px 10px #d9d9d9;
-    position: relative;
+  .tab button {
+    background-color: inherit;
+    /* float: center; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: 0.3s;
+    color: #ed7d2b;
   }
   
-  .aluno img {
-    padding: 1rem;
-  }
-  
-  .aluno img {
-    width: 12rem;
-    height: 12rem;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .aluno-text {
-    display: flex;
-    align-items: flex-start;
-    justify-content: start;
-    flex-direction: column;
-    color: #ED7D2B;
-    
-  }
-
-  .aluno-subtitle {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    justify-items: start;
-  }
-
-  .aluno-text h1 {
-      justify-items: end;
-  }
-  
-  .aluno-text h1,
-  h2,
-  h5 {
-    margin: 0.2rem 0.2rem;
-  }
-
-  .close1 {
-    position: absolute;
-    top: 15px;
-    left:0;
-    color: grey;
-    text-decoration: none;
+  .tablinks {
+    font-style: normal;
+    font-weight: normal;
     font-size: 2rem;
+    line-height: 40px;
+  
+    color: #ed7d2b;
   }
-.deposit{
-  position: absolute;
-  bottom:15px;
-  right:15px;
+  
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  
+ 
+  
+/* ------------------------------ TABLES ------------------------- */
+.table-title{
+  /* text-align: center; */
+  color: var(--main-medium-blue);
+  font-size: 3rem;
+  /* margin-bottom: 10px; */
 }
-.block-food{
-  position: absolute;
-  bottom:15px;
-  right:45px;
+.options{
+  font-size:1.8rem;
 }
-.extrato{
-  position: absolute;
-  bottom:15px;
-  right:70px;
+#fname,.search-form input[type="submit"]{
+  padding: 8px 20px;
 }
+.search-form input[type="text"]{
+  width:300px;
+}
+
+.table-search{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.table-search > *,.search-form > *,.table-search div > *{
+  margin: 5px;
+}
+.table-container{
+    overflow-x: auto;
+    min-width:400px;
+    width:70%;
+    margin:10px auto;
+}
+
+#customers {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--main-orange);
+    color: white;
+  }
+
 /* ------------------------------ MODAL ------------------------- */
 .overlay {
   visibility: hidden;
@@ -273,7 +284,6 @@ a.link-active{
   right: 0;
   bottom: 0;
   left: 0;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,7 +342,7 @@ a.link-active{
 .button-red {background-color: #f44336;} /* Red */
 .button-blue {background-color: var(--main-medium-blue);width:110px} /* Red */
 
-.modal input[type=text],.modal input[type=number], .modal select {
+.modal input[type=text], .modal select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -355,4 +365,31 @@ a.link-active{
 
 .modal input[type=submit]:hover {
   background-color: #45a049;
+}
+
+/* ------------------------------ MEDIA QUERIES ------------------------- */
+@media (max-width:768px){
+  #header{
+
+    /* display:block;*/
+    text-align:center;
+    flex-direction: column;
+
+  }
+
+@media (max-width:650px){
+  .tab{
+    flex-direction: column;
+  }
+}
+
+  /* .header-text > *{
+    margin-right:250px;
+  }
+  .header-name{
+    margin-bottom: 10px;
+  }
+  .header-creditos > *{
+    margin-left:200px;
+  } */
 }
