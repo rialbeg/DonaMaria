@@ -123,13 +123,15 @@ a.link-active{
   #header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+    justify-content: space-around;
     background-color: var(--main-orange);
     color: white;
     height: 222.93px;
   }
   
-  .header-text {
+  /* .header-text {
     margin-left: 30rem;
   }
   .header-text .header-welcome {
@@ -156,7 +158,7 @@ a.link-active{
   .header-text .header-line {
     border: 3px solid;
     width: 30%;
-  }
+  } */
   
   /* ------------------------- PRODUCTS HEADER ------------------------- */
   
