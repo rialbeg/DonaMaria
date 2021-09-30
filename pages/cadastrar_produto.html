@@ -14,6 +14,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <title>Dona Maria</title>
+
+    <script>
+        function validateForm() {
+            var codigo = document.forms["produto_form"]["codigo"].value;
+            if (codigo == "") {
+              alert("Código deve ser preenchido");
+              return false;
+            }
+            var nome = document.forms["produto_form"]["nome"].value;
+            if (nome == "") {
+              alert("O nome deve ser preenchido");
+              return false;
+            }
+            var ingredientes = document.forms["produto_form"]["ingredientes"].value;
+            if (ingredientes == "") {
+              alert("Os ingredientes deve ser preenchido");
+              return false;
+            }
+            var preco = document.forms["produto_form"]["preco"].value;
+            if (preco == "") {
+              alert("O preço deve ser preenchido");
+              return false;
+            }
+          }
+    </script>
+
 </head>
 <body>
     <nav id="navbar">
@@ -23,7 +49,7 @@
     </nav>
 
     <!-- <div class="container"> -->
-        <form action="cadastrar_produto.html" class="container">
+        <form name="produto_form" class="container" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
             <div class="form-box">
                     <h1 class="title">
                         Alimentos
@@ -69,6 +95,7 @@
         </form>
             
     <!-- </div> -->
+
 
 
 
