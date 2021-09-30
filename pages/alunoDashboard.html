@@ -20,16 +20,18 @@
   <body>
     <header >
       <nav id="navbar">
-        <img
+        <a href="../index.html">
+          <img
           src="../images/logo-nome.png"
           alt="Dona Maria Cantina Escolar"
           id="logo-nome"
         />
-        <ul class="navlist">
+        </a>
+        <!-- <ul class="navlist">
           <li class="navitem">Home</li>
           <li class="navitem">Sobre Nós</li>
         </ul>
-        <div class="btn-login">Login</div>
+        <div class="btn-login">Login</div> -->
       </nav>
     </header>
 
@@ -41,7 +43,7 @@
           <h2 class="header-name">Bartholomew</h2>
         </div>
         <div class="header-creditos">
-          <h1 class="header-text">Créditos</h1>
+          <h1 class="header-welcome">Créditos</h1>
           <h2 class="header-valor">R$ 987,00</h2>
         </div>
       </section>
@@ -79,6 +81,9 @@
                 <h5>Misto</h5>
                 <h1>R$ 2,15</h1>
               </div>
+              <a  title="adicionar ao carrinho" onclick="javascript:alert('item adicionado ao carrinho')" >
+                <i class="fas fa-plus-circle"></i>
+              </a>
             </div>
             <div class="produto">
               <img src="../images/produtos/donuts.jpg" alt="Alvo Dumbledore" />
@@ -87,6 +92,9 @@
                 <h5>01 unidade</h5>
                 <h1>R$ 9,15</h1>
               </div>
+              <a  title="adicionar ao carrinho" onclick="javascript:alert('item adicionado ao carrinho')">
+                <i class="fas fa-plus-circle"></i>
+              </a>
             </div>
             <div class="produto">
               <img src="../images/produtos/sanduiche-de-presunto.jpg" alt="Alvo Dumbledore" />
@@ -95,6 +103,9 @@
                 <h5>15 Kg</h5>
                 <h1>R$ 273,15</h1>
               </div>
+              <a  title="adicionar ao carrinho" onclick="javascript:alert('item adicionado ao carrinho')">
+                <i class="fas fa-plus-circle"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -111,6 +122,9 @@
                 <h4>350 ml</h4>
                 <h1>R$ 8,00</h1>
               </div>
+              <a  title="adicionar ao carrinho" onclick="javascript:alert('item adicionado ao carrinho')">
+                <i class="fas fa-plus-circle"></i>
+              </a>
             </div>
             <div class="produto">
               <img src="../images/produtos/duff.jpg" alt="Alvo Dumbledore" />
@@ -119,6 +133,9 @@
                 <h4>350 ml</h4>
                 <h1>R$ 15,00</h1>
               </div>
+              <a  title="adicionar ao carrinho" onclick="javascript:alert('item adicionado ao carrinho')">
+                <i class="fas fa-plus-circle"></i>
+              </a>
             </div>
             <div class="produto">
               <img src="../images/produtos/refresco.png" alt="Alvo Dumbledore" />
@@ -127,6 +144,9 @@
                 <h4>Feito de tamarindo, sabor limão</h4>
                 <h1>R$ 150,00</h1>
               </div>
+              <a  title="adicionar ao carrinho" onclick="javascript:alert('item adicionado ao carrinho')">
+                <i class="fas fa-plus-circle"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -137,7 +157,7 @@
           <table id="customers">
               <tr>
                   <th>Data</th>
-                  <th>Valor</th>
+                  <th>Valor do depósito</th>
               </tr>
               
               <tr>
@@ -166,7 +186,7 @@
           </div>
         </div>
       </section>
-      <a href="#" class="float">
+      <a href="./shopcart.html" class="float">
         <i class="fas fa-cart-plus"></i>
       </a>
     </main>
@@ -177,7 +197,6 @@
       src="https://kit.fontawesome.com/ffb9df773d.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./JS/index.js"></script>
     <script src="../JS/alunoDashboard.js"></script>
   </body>
 </html>

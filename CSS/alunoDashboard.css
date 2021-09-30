@@ -91,19 +91,23 @@ main {
 
   color: #ffffff;
 }
-
+/* ------------------------- LINKS ------------------------- */
+a:hover{
+  cursor: pointer;
+}
 /* ------------------------- HEADER ------------------------- */
 #header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: var(--main-orange);
   color: white;
   height: 222.93px;
+  font-size: 2.5rem;
 }
 
-.header-text {
-  margin-left: 30rem;
+/* .header-text {
+  margin-left: 20rem;
 }
 .header-text .header-welcome {
   font-size: 2rem;
@@ -129,7 +133,7 @@ main {
 .header-text .header-line {
   border: 3px solid;
   width: 30%;
-}
+} */
 
 /* ------------------------- PRODUCTS HEADER ------------------------- */
 
@@ -160,6 +164,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   overflow: hidden;
   background-color: #f6f6f6;
 }
@@ -316,3 +321,12 @@ h5 {
     align-items: center;
   }
   
+  /************MEDIA QUERIES******************/
+  @media(max-width:800px){
+    html {
+      font-size: 50%;
+    }
+    #header{
+      flex-direction: column;
+    }
+  }
