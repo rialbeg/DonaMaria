@@ -15,3 +15,12 @@ function openTab(evt, cityName) {
   
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
+
+
+infoAluno = JSON.parse(sessionStorage.getItem("infoAluno"));
+console.log(infoAluno);
+
+const header_welcome = document.querySelector(".header-welcome");
+const header_name = document.querySelector(".header-name");
+
+header_name.innerHTML = `${infoAluno[0]}`;
